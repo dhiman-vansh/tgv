@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Amy;
+    src: url(../Assests/The\ August.ttf);
+}
+*{
+    font-family: sansa;
+}
+.vid{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+.vid section{
+    max-width: 1080px;
+    margin: auto;
+    display: flex ;
+    flex-wrap: wrap;
+}
+.vid section h2{
+    padding: 2% 0px;
+    width: 50%;
+    min-width: 370px;
+}
+
+
+.test{
+    text-align: center  ;
+}
+.test card{
+    display: block;
+    border: 2px solid violet;
+    background-color: aquamarine;
+    /* min-width: 380px; */
+    padding: 1%;
+
+}
