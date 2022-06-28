@@ -1,5 +1,9 @@
 import SimpleReactFooter from "simple-react-footer";
 import "./Home.css"
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 export default function Footer(){
 
@@ -59,7 +63,8 @@ export default function Footer(){
     <div className="foot">
         {/* <img src="https://images.pexels.com/photos/5237358/pexels-photo-5237358.jpeg"
          width={"50%"} /> */}
-    <section >
+    <section data-aos="fade-up"
+  data-aos-duration="1000">
 
     <SimpleReactFooter  
     description={description} 

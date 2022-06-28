@@ -4,6 +4,8 @@ import Vidcomp from "./Homecomp/Vidcomp"
 import Foot from "./Homecomp/Foot"
 import AutoPlay from "./Homecomp/Autoplay"
 import Blogs from "./Homecomp/Blogs"
+import Utube from "./Homecomp/Utube"
+import Grev from "./Homecomp/Grev"
 // import InstagramEmbed from 'react-instagram-embed';
 
 export default function Home() {
@@ -19,6 +21,8 @@ export default function Home() {
         <Navcomp />
         <Vidcomp />
         <Blogs />
+        <Utube />
+        <Grev />
         <Testimonals />
         <AutoPlay />
         {/* <InstagramEmbed

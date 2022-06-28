@@ -1,26 +1,46 @@
 @font-face {
     font-family: Amy;
-    src: url(../Assests/The\ August.ttf);
+    src: url(../Assests/OHWHALE-OYZQ.TTF);
 }
 *{
-    font-family: sansa;
+    font-family: Amy;
+    letter-spacing: 1.5px;
+    /* font-style:oblique; */
+}
+
+.slick-next:before, .slick-prev:before {
+    font-size: 50px;
+    line-height: 1;
+    opacity: .75;
+    color: black;
+}
+.slick-next:before{
+    content: "»";
+}
+.slick-prev:before{
+    content: "«";
 }
 
 .top{
     /* background-image: linear-gradient(to top,rgba(0, 0, 0, 0.884), rgba(0, 0, 0, 0.753) ); */
-    background-color: black;
+    background-color: #417c28;
 }
-
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.nav-link{
+    color: white;
+}
 
 .vid{
-    background-color: black;
+    background-color: #417c28;
     height: fit-content;
-    margin-top: -2.5%;
+    /* margin-top: -2.5%; */
     color: aliceblue;
-    text-align: center;
+    text-align: left;
 }
 .vid section{
-    max-width: 1080px;
+    max-width: 1380px;
     margin: auto;
     display: flex ;
     flex-wrap: wrap;
@@ -42,16 +62,48 @@
 }
 
 
+
+.grev{
+    max-width: 1400px;
+    margin: 2% auto;
+}
+.grev div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.grev card{
+    margin: 2% 0px;
+    text-align: center;
+    padding: 2% 0px;
+    display: block;
+    box-shadow: 1px 1px 8px 1px grey;
+    width: 18rem;
+    /* background-color: #417c28; */
+    /* border: brown    2px solid;     */
+}
+.grev section{
+    width: 50%;
+}
+.grev rev{
+    margin: 30px 20px;
+    padding: 5%;
+    box-shadow: 1px 1px 8px 1px grey;
+}
+
+
+
 .test{
     text-align: left;
     margin: 2% auto;
+    /* background-color: blueviolet; */
 }
 .test h2{
     padding: 2% 0px;
     font-weight: bolder;
     font-size: 3rem;
+    color: #417c28;
     margin: 2% 0px;
-    border-bottom: 10px black solid  ;
+    border-bottom: 2px #417c28 solid  ;
 }
 .test section{
     max-width: 1400px;
@@ -67,13 +119,15 @@
 
 
 
+
 .blog-cont{
     max-width: 1400px;
     margin: auto;
-    border-bottom: 10px black solid  ;
+    border-bottom: 2px #417c28 solid  ;
     padding: 2% 0px;
     font-weight: bolder;
     font-size: 3rem;
+    color: #417c28;
 }
 .blog{
     max-width: 1400px;
@@ -86,7 +140,7 @@
     width: 50%;
     padding: 10px;
     /* border: 2px saddlebrown solid; */
-    min-width: 380px;
+    min-width: 390px;
     align-items: center;
 }
 .blog figure{
@@ -102,19 +156,41 @@
 }
 .blog img:hover{
     cursor: pointer;
+    /* box-shadow: 1px 1px 10px 1px grey; */
 	transform: scale(1.1);
 }
 
 
+
+
+.utube{
+    background-color: bisque;
+    text-align: center;
+    min-height: 280px;
+    padding:0px 0px 2% 0px;
+}
+.utube h2{
+    text-align: left;
+    background-color: rgba(212, 138, 47, 0.74);
+    display: block;
+    padding: 0px 20px;
+    border-radius:0px 0px 20px 20px;
+    width: fit-content;
+}
+
+
+
+
 .feat{
-    /* background-color: aqua;  */
+    /* background-color: black;  */
     margin: 2% auto;
 
 }
 .feat h2{
     max-width: 1400px;
+    color: #417c28;
     margin: auto;
-    border-bottom: 10px black solid  ;
+    border-bottom: 2px #417c28 solid  ;
     padding: 2% 0px;
     font-weight: bolder;
     font-size: 3rem;
@@ -123,11 +199,14 @@
 .feat a{
     margin: 10% 10%;
 }
-.slick-dots, .slick-next, .slick-prev {
+/* .feat.slick-dots, .slick-next, .slick-prev {
     position: relative;
     display: block;
     padding: 0;
 }
+ */
+
+
 
 .foot{
     background-image: url(../Assests/goat\ 2.jpg);
@@ -141,6 +220,7 @@
     /* height: 800px;    */
 }
 .foot section{
+    background-color: transparent;
     margin-top:28% ;
 }
 div.footer-container{

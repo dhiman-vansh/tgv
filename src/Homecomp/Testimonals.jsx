@@ -10,7 +10,7 @@ export default class Testimonals extends Component {
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
-      autoplay: true,
+      // autoplay: true,
       speed: 2000,
       autoplaySpeed: 2000,
       initialSlide: 0,
@@ -44,7 +44,7 @@ export default class Testimonals extends Component {
     return (
       <div className="test">
         <section>
-        <h2> TESTIMONIALS </h2>
+        <h2> Testimonials </h2>
         <Slider {...settings}>
           <card>
           <iframe width="100%" height={"600px"}
@@ -52,7 +52,9 @@ export default class Testimonals extends Component {
           frameborder="0" allow="accelerometer; picture-in-picture" ></iframe>
           </card>
           <card>
-            <h3>2</h3>
+          <iframe width="100%" height="600" 
+          src="https://www.youtube.com/embed/HAuoI-HeTAY" title="The Goat Village | Hill view resort, Nag Tibba  |  Best resort in Uttarakhand" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+           allowfullscreen></iframe>
           </card>
           <card>
             <h3>3</h3>
