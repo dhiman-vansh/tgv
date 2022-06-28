@@ -5,8 +5,17 @@
 *{
     font-family: sansa;
 }
+
+.top{
+    /* background-image: linear-gradient(to top,rgba(0, 0, 0, 0.884), rgba(0, 0, 0, 0.753) ); */
+    background-color: black;
+}
+
+
 .vid{
     background-color: black;
+    height: fit-content;
+    margin-top: -2.5%;
     color: aliceblue;
     text-align: center;
 }
@@ -23,14 +32,117 @@
 }
 
 
+
+
+.nav-link{
+    font-weight: bold;
+    margin: 0px 10px;
+    font-size: 20px;
+    /* background-color: aqua; */
+}
+
+
 .test{
-    text-align: center  ;
+    text-align: left;
+    margin: 2% auto;
+}
+.test h2{
+    padding: 2% 0px;
+    font-weight: bolder;
+    font-size: 3rem;
+    margin: 2% 0px;
+    border-bottom: 10px black solid  ;
+}
+.test section{
+    max-width: 1400px;
+    margin: auto;
 }
 .test card{
     display: block;
-    border: 2px solid violet;
-    background-color: aquamarine;
+    /* border: 2px solid violet; */
+    /* background-color: aquamarine; */
     /* min-width: 380px; */
     padding: 1%;
+}
 
+
+
+.blog-cont{
+    max-width: 1400px;
+    margin: auto;
+    border-bottom: 10px black solid  ;
+    padding: 2% 0px;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.blog{
+    max-width: 1400px;
+    padding: 2% 0px;
+    margin: auto;
+    display:flex;
+    flex-wrap: wrap;
+}
+.blog section{
+    width: 50%;
+    padding: 10px;
+    /* border: 2px saddlebrown solid; */
+    min-width: 380px;
+    align-items: center;
+}
+.blog figure{
+	margin: 0;
+	padding: 0;
+    border-radius: 20px;
+	background: #fff;
+	overflow: hidden;
+}
+.blog img{
+    /* box-shadow: 2px 1px 10px 0px grey; */
+	transition: .3s ease-in-out;
+}
+.blog img:hover{
+    cursor: pointer;
+	transform: scale(1.1);
+}
+
+
+.feat{
+    /* background-color: aqua;  */
+    margin: 2% auto;
+
+}
+.feat h2{
+    max-width: 1400px;
+    margin: auto;
+    border-bottom: 10px black solid  ;
+    padding: 2% 0px;
+    font-weight: bolder;
+    font-size: 3rem;
+    /* margin: 2% 0px; */
+}
+.feat a{
+    margin: 10% 10%;
+}
+.slick-dots, .slick-next, .slick-prev {
+    position: relative;
+    display: block;
+    padding: 0;
+}
+
+.foot{
+    background-image: url(../Assests/goat\ 2.jpg);
+    /* display: block; */
+    background-size:initial ;
+    border: 0.5px dotted white;
+    /* max-width: 300px; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-position: 50%; */
+    /* height: 800px;    */
+}
+.foot section{
+    margin-top:28% ;
+}
+div.footer-container{
+    padding: 0px;
 }
