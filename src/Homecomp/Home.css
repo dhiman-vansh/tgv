@@ -89,7 +89,14 @@
     padding: 5%;
     box-shadow: 1px 1px 8px 1px grey;
 }
-
+.grev h1{
+    padding: 2% 0px;
+    font-weight: bolder;
+    font-size: 3rem;
+    color: #417c28;
+    margin: 2% 0px;
+    border-bottom: 2px #417c28 solid  ;
+}
 
 
 .test{
@@ -177,7 +184,14 @@
     border-radius:0px 0px 20px 20px;
     width: fit-content;
 }
-
+.utube button{
+    background-color: #417c28;
+    position:fixed;
+    /* left: 10%; */
+    /* display: none; */
+    width: 0px;
+    font-size: 100px;
+}
 
 
 
@@ -198,6 +212,14 @@
 }
 .feat a{
     margin: 10% 10%;
+}
+.feat button{
+    background-color: #417c28;
+    position:fixed;
+    /* left: 10%; */
+    /* display: none; */
+    width: 0px;
+    font-size: 100px;
 }
 /* .feat.slick-dots, .slick-next, .slick-prev {
     position: relative;

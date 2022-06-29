@@ -3,7 +3,12 @@ import Slider from "react-slick";
 import "./Home.css"
 import pic from "../Assests/goat.jpg"
 
+
+
+
 export default class Utube extends Component {
+
+  
   render() {
     var settings = {
       dots: true,

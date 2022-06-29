@@ -1,4 +1,3 @@
-import "./Home.css"
 import Slider from "react-slick"
 // import AOS from 'aos';
 // import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -13,7 +12,17 @@ export default function Grev() {
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 2,
-        initialSlide: 1
+        initialSlide: 1,
+        responsive: [
+          
+           {
+            breakpoint: 900,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
     }
 
     return(
