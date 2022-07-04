@@ -5,8 +5,8 @@ import Gall from "./Gall";
 function App() {
   return (
    <>
-   <Home />
-   {/* <Gall /> */}
+   {/* <Home /> */}
+   <Gall />
    </>
   );
 }
