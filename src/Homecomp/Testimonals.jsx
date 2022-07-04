@@ -25,7 +25,7 @@ export default class Testimonals extends Component {
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 900,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
@@ -53,7 +53,7 @@ export default class Testimonals extends Component {
           </card>
           <card>
           <iframe width="100%" height="600" 
-          src="https://www.youtube.com/embed/HAuoI-HeTAY" title="The Goat Village | Hill view resort, Nag Tibba  |  Best resort in Uttarakhand" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          src="https://www.youtube.com/embed/yMc9ZIpYVXA" title="The Goat Village | Hill view resort, Nag Tibba  |  Best resort in Uttarakhand" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
            allowfullscreen></iframe>
           </card>
           <card>
