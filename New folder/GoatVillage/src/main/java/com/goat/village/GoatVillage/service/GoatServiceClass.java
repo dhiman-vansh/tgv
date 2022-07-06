@@ -1,5 +1,7 @@
 package com.goat.village.GoatVillage.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,19 +14,20 @@ public class GoatServiceClass {
 	
 	@Autowired
 	GoatRepository goatRepository;
-	public UserResponse createUser(User user) {
-		UserResponse response=new UserResponse();
-		response.setMessage(goatRepository.createrUser(user));
-		
-		return response;
-	}
+	/*
+	 * public UserResponse createUser(User user) { UserResponse response=new
+	 * UserResponse(); response.setMessage(goatRepository.createrUser(user));
+	 * 
+	 * 
+	 * return response; }
+	 */
 	
 	
-	public UserResponse loginUser(User user) {
-		UserResponse response=new UserResponse();
-		response.setMessage(goatRepository.loginUser(user));
+	public List<User> countRoom() {
 		
-		return response;
+		System.out.println("hello");
+		return goatRepository.findAll();
+		
 	}
 
 

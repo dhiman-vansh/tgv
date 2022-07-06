@@ -1,5 +1,7 @@
 package com.goat.village.goat.village.model;
 
+import java.util.Date;
+
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
@@ -16,5 +18,7 @@ public class User {
 	private String Lname;
 	private String email;
 	private int phnno;
+	private Date sdate;
+	private Date edate;
 
 }
