@@ -56,7 +56,6 @@ export default function Reservation() {
   // const saveUserData = () => {
   //   { console.log("name is ", name) }
 
-  //   let result = fetch('http://localhost:8000/post', {
   //     method: 'POST',
   //     mode: 'cors',
   //     headers: {
