@@ -4,21 +4,17 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.goat.village.GoatVillage.repo.GoatRepository;
-import com.goat.village.GoatVillage.service.GoatServiceClass;
-import com.goat.village.goat.village.model.User;
-import com.goat.village.goat.village.request.UserResponse;
-import com.goat.village.goat.village.request.Userrequest;
+import com.goat.village.model.Cottage;
 @RestController
 //@RequestMapping(value="/api")
 public class GoatVillageRest {
 	
-	  @Autowired 
-	  GoatServiceClass goatServiceClass;
+	/*
+	 * @Autowired GoatServiceClass goatServiceClass;
+	 */
 	 
 	@Autowired
 	GoatRepository goatRepository;
@@ -35,7 +31,7 @@ public class GoatVillageRest {
 
 	//@PostMapping(path= "/login", consumes = "application/json", produces = "application/json")
 	@GetMapping(path="/count")
-	public List<User> countRoom(){
-		return goatServiceClass.countRoom();
+	public List<Cottage> countRoom(){
+		return goatRepository.findAll();
 	}
 }

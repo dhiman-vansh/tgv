@@ -6,8 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.goat.village.GoatVillage.repo.GoatRepository;
-import com.goat.village.goat.village.model.User;
-import com.goat.village.goat.village.request.UserResponse;
+import com.goat.village.model.Cottage;
 
 @Service
 public class GoatServiceClass {
@@ -23,7 +22,7 @@ public class GoatServiceClass {
 	 */
 	
 	
-	public List<User> countRoom() {
+	public List<Cottage> countRoom() {
 		
 		System.out.println("hello");
 		return goatRepository.findAll();

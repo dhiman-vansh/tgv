@@ -3,10 +3,12 @@ package com.goat.village.GoatVillage.repo;
 import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-import com.goat.village.goat.village.model.User;
+import com.goat.village.model.Cottage;
 
-public interface GoatRepository extends CrudRepository<User, Integer> {
+@Repository
+public interface GoatRepository extends CrudRepository<Cottage, Integer> {
 
 
 	/*
@@ -30,6 +32,6 @@ public interface GoatRepository extends CrudRepository<User, Integer> {
 	 * 
 	 * }
 	 */
-	public List<User> findAll();
+	public List<Cottage> findAll();
 
 }

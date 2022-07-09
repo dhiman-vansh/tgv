@@ -28,9 +28,9 @@ export default function Navcomp() {
   <Navbar.Toggle aria-controls="responsive-navbar-nav"  />
   <Navbar.Collapse id="responsive-navbar-nav" >
     <Nav className="ms-auto"  >
-      <Nav.Link href="/home" style={{color:"white"}}>Home</Nav.Link>
-      <Nav.Link href="/about" style={{color:"white"}}>Gallery</Nav.Link>
-      <Nav.Link href="/galler" style={{color:"white"}}>Amenities</Nav.Link>
+      <Nav.Link href="/" style={{color:"white"}}>Home</Nav.Link>
+      <Nav.Link href="/gall" style={{color:"white"}}>Gallery</Nav.Link>
+      <Nav.Link href="/gall" style={{color:"white"}}>Amenities</Nav.Link>
       {/* <NavDropdown title="Pricing"  id="collasible-nav-dropdown" 
       // show={show} onMouseEnter={showDropdown} 
       // onMouseLeave={hideDropdown}
@@ -40,7 +40,9 @@ export default function Navcomp() {
         <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
       </NavDropdown> */}
       <Nav.Link href="/about" style={{color:"white"}}>About Us</Nav.Link>
-      <Nav.Link href="/about" style={{color:"white"}}>Contact Us</Nav.Link>
+      {/* <Nav.Link href="/about" style={{color:"white"}}>Contact Us</Nav.Link> */}
+      <Nav.Link href="/res" style={{color:"white"}}>Bookings</Nav.Link>
+
     
     </Nav>
     <Nav>

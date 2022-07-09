@@ -1,7 +1,7 @@
-import Navcomp from "./Homecomp/Navcomp"
+// import Navcomp from "./Homecomp/Navcomp"
 import Testimonals from "./Homecomp/Testimonals"
 import Vidcomp from "./Homecomp/Vidcomp"
-import Foot from "./Homecomp/Foot"
+// import Foot from "./Homecomp/Foot"
 import AutoPlay from "./Homecomp/Autoplay"
 import Blogs from "./Homecomp/Blogs"
 import Utube from "./Homecomp/Utube"
@@ -18,7 +18,7 @@ export default function Home() {
 
     return(
         <>
-        <Navcomp />
+        {/* <Navcomp /> */}
         <Vidcomp />
         <Blogs />
         <Utube />
@@ -38,7 +38,7 @@ export default function Home() {
         onAfterRender={() => {}}
         onFailure={() => {}}
         /> */}
-        <Foot />
+        {/* <Foot /> */}
         </>
     )
 }
