@@ -37,7 +37,6 @@ export default function Reservation() {
     makeAPICall();
   }, [])
 
-
   const slotAvailability = () => {
     const dateSelected = dateState;
     data.map((value) => {
@@ -46,7 +45,7 @@ export default function Reservation() {
         // console.log("slots are ", value.slots)
         setSlot(value.slots);
       }
-      else {setSlot(`(no data available)`)}
+      // else {setSlot(`(no data available)`)}
     })
   }
 

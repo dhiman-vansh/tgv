@@ -46,6 +46,9 @@
 }
 .cal p{
     font-size: larger;
+    font-weight: bold;
+    border: solid 2px black;
+    background-color: yellowgreen;
 }
 .exactcal{
     padding: 10px;
@@ -64,6 +67,9 @@
     /* border-bottom: 1px solid black; */
     background-color: yellowgreen;
     padding: 10px;
+    border-radius: 5%;
+    font-size: larger;
+    font-weight: bold;
     margin: 20px 0px;
 }
 .user{
@@ -75,5 +81,12 @@
 .user button{
     background-color: yellowgreen;
     padding: 0px 15px;
+    font-size: large;
+    font-weight: bold;
     margin: 20px 0px;
+    border-radius: 5%;
+
 }
+
+
+
