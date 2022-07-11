@@ -71,7 +71,7 @@ export default function Reservation() {
   // }
 
   const saveData = () => {
-    { console.log("name is ", name) }
+    // { console.log("name is ", name) }
 
     let result = fetch('https://tgvapi.herokuapp.com/postuser'
     , {
@@ -83,17 +83,21 @@ export default function Reservation() {
       body: JSON.stringify({
         name: name,
         mail: mail,
-        phone: phone
+        phone: phone,
+        date: dateState,
+        slot:confirm
       })
     }
     )
-      .then(function (res) { console.log(res.json()) })
+      // .then(function (res) { console.log(res.json()) })
     // .then(response){
     // check if responcse is success
     //set new state as patyment enable
     // }
-    result = result.json();
+    // result = result.json();
     // console.log('check data', result)
+  alert("entry done 👍");
+  window.location.reload(false);
   }
   return (
     <>
