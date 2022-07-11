@@ -17,11 +17,13 @@ export default function Reservation() {
 
   const makeAPICall = async () => {
     try {
-      const response = await fetch('/dataget', {
-        mode: 'cors', headers: {
-          'Access-Control-Allow-Origin': '*'
-        }
-      });
+      const response = await fetch('/dataget'
+      // , {
+      //   mode: 'cors', headers: {
+      //     'Access-Control-Allow-Origin': '*'
+      //   }
+      // }
+      );
       const data = await response.json();
       console.log({ data })
       setData(data);
@@ -71,9 +73,10 @@ export default function Reservation() {
   const saveData = () => {
     { console.log("name is ", name) }
 
-    let result = fetch('/postuser', {
+    let result = fetch('/postuser'
+    , {
       method: 'POST',
-      mode: 'cors',
+      // mode: 'cors',
       headers: {
         'Content-Type': 'application/json'
       },
@@ -82,7 +85,8 @@ export default function Reservation() {
         mail: mail,
         phone: phone
       })
-    })
+    }
+    )
       .then(function (res) { console.log(res.json()) })
     // .then(response){
     // check if responcse is success
