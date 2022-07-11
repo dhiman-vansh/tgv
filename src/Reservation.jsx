@@ -52,7 +52,7 @@ export default function Reservation() {
   const [dateState, setDateState] = useState(new Date())
   const changeDate = (e) => {
     setDateState(e);
-    setSlot("");
+    setSlot(`(click on "check slots")`);
   }
 
   // const saveUserData = () => {
@@ -164,7 +164,7 @@ export default function Reservation() {
               onChange={e => setConfirm(e.target.value)}
               type="text" placeholder="Enter the Slots " />
           </label>
-
+          <br></br>
           <button onClick={saveData}>SUBMIT</button>
           {/* </form> */}
 
