@@ -17,7 +17,7 @@ export default function Reservation() {
 
   const makeAPICall = async () => {
     try {
-      const response = await fetch('https://tgvapi.herokuapp.com/dataget', {
+      const response = await fetch('/dataget', {
         mode: 'cors', headers: {
           'Access-Control-Allow-Origin': '*'
         }
@@ -71,7 +71,7 @@ export default function Reservation() {
   const saveData = () => {
     { console.log("name is ", name) }
 
-    let result = fetch('https://tgvapi.herokuapp.com/postuser', {
+    let result = fetch('/postuser', {
       method: 'POST',
       mode: 'cors',
       headers: {
