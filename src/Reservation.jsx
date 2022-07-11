@@ -122,11 +122,11 @@ export default function Reservation() {
             // value={dateState}
             onChange={changeDate}
           />
-          <button className='calbut' onClick={slotAvailability}> check Slots</button>
+          <button className='calbut' onClick={slotAvailability}> Check Slots</button>
 
           {/* {console.log('dateis', dateState)} */}
 
-          <p>Slots available for {moment(dateState).format('MMMM Do YYYY')} is <b>{slots}</b></p>
+          <p>Slots available for {moment(dateState).format('MMMM Do YYYY')} are <b>{slots}</b></p>
 
           {/* <button disabled={slots == 0}>Proceed to book</button>
           {slots == 0 && <p>No slots available for Selected date</p>} */}
