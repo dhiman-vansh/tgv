@@ -73,7 +73,7 @@ export default function Reservation() {
   const saveData = () => {
     { console.log("name is ", name) }
 
-    let result = fetch('/postuser'
+    let result = fetch('https://tgvapi.herokuapp.com/postuser'
     , {
       method: 'POST',
       // mode: 'cors',
