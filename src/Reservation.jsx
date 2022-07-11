@@ -46,6 +46,7 @@ export default function Reservation() {
         // console.log("slots are ", value.slots)
         setSlot(value.slots);
       }
+      else {setSlot(`(no data available)`)}
     })
   }
 
