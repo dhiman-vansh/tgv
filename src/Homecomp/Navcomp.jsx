@@ -22,7 +22,7 @@ export default function Navcomp() {
   data-aos="zoom-in"
   data-aos-duration="1000"
   >
-  <Navbar.Brand href="#home">
+  <Navbar.Brand href="/">
     <img src={logo} />
     </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav"  />
