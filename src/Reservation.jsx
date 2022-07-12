@@ -205,12 +205,21 @@ export default function Reservation() {
           {console.log(`new slot is ${newslots}`)}
           <br></br>
           <button onClick={()=>{
-             if (newslots < 0) {
-              alert("Slots entered are more than available ");
-              window.location.reload(false);
-            } else {
-              saveData()
+            if(name!="" && phone!=0 && mail!="" && newslots!=null){
+              if (newslots < 0) {
+                alert("Slots entered are more than available ");
+              } else {
+                saveData()
+              }
             }
+            else{
+              alert("Please enter all entries correctly bro")
+            }
+            //  if (newslots < 0) {
+            //   alert("Slots entered are more than available ");
+            // } else {
+            //   saveData()
+            // }
           }}>SUBMIT</button>
           {/* </form> */}
 

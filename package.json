@@ -29,7 +29,7 @@
     "eject": "react-scripts eject"
   },
   "proxy": "https://tgvapi.herokuapp.com",
-  "eslintConfig": { 
+  "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
