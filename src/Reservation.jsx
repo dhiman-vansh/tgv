@@ -8,11 +8,13 @@ import "./app.css"
 export default function Reservation() {
 
   const [data, setData] = useState([]);
+  let [actdate,setActdate] = useState();
   const [slots, setSlot] = useState('(click on "check slots")');
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
   const [phone, setPhone] = useState(0);
-  const [confirm, setConfirm] = useState("");
+  let [newslots, setNewslots] = useState(0);
+  // const [confirm, setConfirm] = useState("");
 
 
   const makeAPICall = async () => {
@@ -43,6 +45,8 @@ export default function Reservation() {
       // console.log(moment(value.date).format('MMMM Do YYYY'))
       if (moment(value.date).format('MMMM Do YYYY') == moment(dateSelected).format('MMMM Do YYYY')) {
         // console.log("slots are ", value.slots)
+        setActdate(value.date);
+        // console.log(actdate);
         setSlot(value.slots);
       }
       // else {setSlot(`(no data available)`)}
@@ -67,7 +71,7 @@ export default function Reservation() {
   //     "slots": 12})
   //   });
   //   result = result.json();
-  //   console.log('check data', result)
+  //   console.log('check data', r  esult)
   // }
 
   const saveData = () => {
@@ -85,7 +89,7 @@ export default function Reservation() {
         mail: mail,
         phone: phone,
         date: dateState,
-        slot:confirm
+        slot: (slots-newslots)
       })
     }
     )
@@ -96,9 +100,32 @@ export default function Reservation() {
     // }
     // result = result.json();
     // console.log('check data', result)
+    upDate();
   alert("entry done 👍");
   window.location.reload(false);
   }
+
+  const upDate = () => {
+
+    // { console.log("name is ", name) }
+
+    let result = fetch(`https://tgvapi.herokuapp.com/putuser/${actdate}`
+    , {
+      method: 'PUT',
+      // mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        slots: `${newslots}`
+      })
+    }
+    )
+    console.log(`new slot for date ${actdate} is ${newslots}`)
+  }
+
+
+
   return (
     <>
 
@@ -130,6 +157,7 @@ export default function Reservation() {
             // value={dateState}
             onChange={changeDate}
           />
+          {/* {console.log(actdate) } */}
           <button className='calbut' onClick={slotAvailability}> Check Slots</button>
 
           {/* {console.log('dateis', dateState)} */}
@@ -165,9 +193,13 @@ export default function Reservation() {
 
           <label> Slots<br></br>
             <input
-              onChange={e => setConfirm(e.target.value)}
+              onChange={(e) => {
+                // setConfirm(e.target.value)
+                // console.log(`number of slots selected is ${e.target.value}`)
+                setNewslots(slots-(e.target.value))} }
               type="text" placeholder="Enter the Slots " />
           </label>
+          {console.log(`confirm slot is ${newslots}`)}
           <br></br>
           <button onClick={saveData}>SUBMIT</button>
           {/* </form> */}

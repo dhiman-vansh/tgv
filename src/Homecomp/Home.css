@@ -154,7 +154,7 @@
 	margin: 0;
 	padding: 0;
     border-radius: 20px;
-	background: #fff;
+	/* background: #fff; */
 	overflow: hidden;
 }
 .blog img{
@@ -164,7 +164,7 @@
 .blog img:hover{
     cursor: pointer;
     /* box-shadow: 1px 1px 10px 1px grey; */
-	transform: scale(1.1);
+	transform: scale(5.5);
 }
 
 
