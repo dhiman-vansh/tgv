@@ -8,7 +8,7 @@ import "./app.css"
 export default function Reservation() {
 
   const [data, setData] = useState([]);
-  let [actdate,setActdate] = useState();
+  let [actdate, setActdate] = useState();
   const [slots, setSlot] = useState('(click on "check slots")');
   const [name, setName] = useState("");
   const [mail, setMail] = useState("");
@@ -20,11 +20,11 @@ export default function Reservation() {
   const makeAPICall = async () => {
     try {
       const response = await fetch('https://tgvapi.herokuapp.com/dataget'
-      // , {
-      //   mode: 'cors', headers: {
-      //     'Access-Control-Allow-Origin': '*'
-      //   }
-      // }
+        // , {
+        //   mode: 'cors', headers: {
+        //     'Access-Control-Allow-Origin': '*'
+        //   }
+        // }
       );
       const data = await response.json();
       console.log({ data })
@@ -78,31 +78,33 @@ export default function Reservation() {
     // { console.log("name is ", name) }
 
     let result = fetch('https://tgvapi.herokuapp.com/postuser'
-    , {
-      method: 'POST',
-      // mode: 'cors',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        name: name,
-        mail: mail,
-        phone: phone,
-        date: dateState,
-        slot: (slots-newslots)
-      })
-    }
+      , {
+        method: 'POST',
+        // mode: 'cors',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name: name,
+          mail: mail,
+          phone: phone,
+          date: dateState,
+          slot: (slots - newslots)
+        })
+      }
     )
-      // .then(function (res) { console.log(res.json()) })
+    // .then(function (res) { console.log(res.json()) })
     // .then(response){
     // check if responcse is success
     //set new state as patyment enable
     // }
     // result = result.json();
     // console.log('check data', result)
+   
     upDate();
-  alert("entry done 👍");
-  window.location.reload(false);
+
+    alert("entry done 👍");
+    window.location.reload(false);
   }
 
   const upDate = () => {
@@ -110,16 +112,16 @@ export default function Reservation() {
     // { console.log("name is ", name) }
 
     let result = fetch(`https://tgvapi.herokuapp.com/putuser/${actdate}`
-    , {
-      method: 'PUT',
-      // mode: 'cors',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        slots: `${newslots}`
-      })
-    }
+      , {
+        method: 'PUT',
+        // mode: 'cors',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          slots: `${newslots}`
+        })
+      }
     )
     console.log(`new slot for date ${actdate} is ${newslots}`)
   }
@@ -196,12 +198,20 @@ export default function Reservation() {
               onChange={(e) => {
                 // setConfirm(e.target.value)
                 // console.log(`number of slots selected is ${e.target.value}`)
-                setNewslots(slots-(e.target.value))} }
-              type="text" placeholder="Enter the Slots " />
+                setNewslots(slots - (e.target.value))
+              }}
+              type="text" placeholder="Check Slots then enter " />
           </label>
-          {console.log(`confirm slot is ${newslots}`)}
+          {console.log(`new slot is ${newslots}`)}
           <br></br>
-          <button onClick={saveData}>SUBMIT</button>
+          <button onClick={()=>{
+             if (newslots < 0) {
+              alert("Slots entered are more than available ");
+              window.location.reload(false);
+            } else {
+              saveData()
+            }
+          }}>SUBMIT</button>
           {/* </form> */}
 
         </div>
