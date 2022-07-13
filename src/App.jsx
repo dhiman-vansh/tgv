@@ -10,7 +10,7 @@ import {MDBIcon} from 'mdb-react-ui-kit';
 function App() {
   return (
     <>
-      <a href="https://wa.me/8755381346" class="whatsapp_float" target="_blank"><MDBIcon style={{marginTop:"15px"}} fab icon='whatsapp' /> </a>
+      <a href="https://wa.me/8755381346" class="whatsapp_float" target="_blank"><MDBIcon style={{marginTop:"22%"}} fab icon='whatsapp' /> </a>
 
       <Routes>
         <Route path="/" element={<Home />} />
