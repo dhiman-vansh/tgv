@@ -1,7 +1,11 @@
+
 .ig {
     display: flex;
     flex-wrap: wrap;
 
+}
+.react-calendar__tile--active:enabled:hover, .react-calendar__tile--active:enabled:focus {
+    background: green;
 }
 
 .gal {
@@ -107,4 +111,13 @@
 
 .user button:active {
     background-color: transparent;
+}
+
+
+.cal .react-calendar__tile--active:enabled:hover, .react-calendar__tile--active:enabled:focus {
+    background: yellowgreen;
+}
+.cal .react-calendar__tile--active {
+    background: yellowgreen;
+    color: white;
 }

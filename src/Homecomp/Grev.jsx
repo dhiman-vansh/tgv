@@ -35,7 +35,7 @@ export default function Grev() {
                 <img src="https://images.prismic.io/indiahike/bbe2a446-f2a1-46ca-8c95-2706681a1401_WhatsApp+Image+2022-06-07+at+3.44.07+PM.jpeg?auto=compress,format"
                 width={"100%"} />
                 <h4>
-                    Reviews From Google
+                    {/* Reviews From Google */}
                 </h4>
             </card>
         <section data-aos="zoom-in"

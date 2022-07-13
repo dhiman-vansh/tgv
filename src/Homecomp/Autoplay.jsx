@@ -44,22 +44,22 @@ export default class AutoPlay extends Component {
       <div className="feat">
         <h2>Our Mentions</h2>
         <Slider {...settings}>
-          <a>
+          <a href="">
              <img src="https://www.thegoatvillage.com/images/new_img/features/1.png" />
           </a>
-          <a>
+          <a href="">
             <img src="https://www.thegoatvillage.com/images/new_img/features/2.png" />
           </a>
-          <a>
+          <a href="">
             <img src="https://www.thegoatvillage.com/images/new_img/features/3.png" />
           </a>
-          <a>
+          <a href="">
             <img src="https://www.thegoatvillage.com/images/new_img/features/4.png" />
           </a>
-          <a>
+          <a href="">
             <img src="https://www.thegoatvillage.com/images/new_img/features/5.png" />
           </a>
-          <a>
+          <a href="">
           <img src="https://www.thegoatvillage.com/images/new_img/features/6.png" />
           </a>
         </Slider>

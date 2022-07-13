@@ -1,8 +1,9 @@
 import React from 'react';
+import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import Navcomp from './Homecomp/Navcomp';
-import Foot from './Homecomp/Foot';
+import NewFoot from './Homecomp/NewFoot';
 import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,7 +12,7 @@ root.render(
     <BrowserRouter>
       <Navcomp />
       <App />
-      <Foot />
+      <NewFoot />
     </BrowserRouter>
   </React.StrictMode>
 );

@@ -20,6 +20,18 @@
 .slick-prev:before{
     content: "«";
 }
+@media screen and (max-width: 600px) {
+    .slick-next:before, .slick-prev:before{
+        visibility: hidden;
+    }
+    .grev img {
+        width: 0px;
+    }
+    .grev card{
+        width: 0px;
+    }
+    
+}
 
 .top{
     /* background-image: linear-gradient(to top,rgba(0, 0, 0, 0.884), rgba(0, 0, 0, 0.753) ); */
@@ -77,7 +89,7 @@
     padding: 2% 0px;
     display: block;
     box-shadow: 1px 1px 8px 1px grey;
-    width: 18rem;
+    max-width: 18rem;
     /* background-color: #417c28; */
     /* border: brown    2px solid;     */
 }
@@ -230,21 +242,4 @@
 
 
 
-.foot{
-    background-image: url(../Assests/goat\ 2.jpg);
-    /* display: block; */
-    background-size:initial ;
-    border: 0.5px dotted white;
-    /* max-width: 300px; */
-    background-repeat: no-repeat;
-    background-size: contain;
-    /* background-position: 50%; */
-    /* height: 800px;    */
-}
-.foot section{
-    background-color: transparent;
-    margin-top:28% ;
-}
-div.footer-container{
-    padding: 1%;
-}
+
