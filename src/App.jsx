@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import About from "./Comp/About";
 import {MDBIcon} from 'mdb-react-ui-kit';
 import Amen from "./Comp/Amen";
+import Contact from "./Comp/Contact";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/gall" element={<Gall />} />
         <Route path="/res" element={<Reservation />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/amen" element={<Amen />} />
 
         {/* <Gall /> */}

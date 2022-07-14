@@ -44,15 +44,22 @@
     visibility: hidden;
     left: 50%;
 }
-/* .gal img:hover {
+.gal img:hover {
     transform: scale(1.02);
     opacity: 1;
-} */
+    cursor: pointer;
+}
 
 .resbgimg{
     padding: 2%;
     /* color: aliceblue; */
     background-image: linear-gradient(to right, #373b3c,#a88661)
+}
+.resbgimg h1 {
+    /* border-bottom: #417c28 solid 3px; */
+    max-width: 1400px;
+    margin: auto;
+    padding: 1%;
 }
 label{
     color: white;
@@ -61,6 +68,7 @@ label{
     display: flex;
     margin: auto;
     margin-top: 2%;
+    margin-bottom: 2%;
     max-width: 1400px;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -205,5 +213,104 @@ label{
 }
 .locat{
     width: 75%;
-    margin: 2% auto -5px auto;
+    min-width: 390px;
+    margin: 2% auto 0px auto;
+}
+
+
+.contact{
+    background-image: linear-gradient(to right, #373b3c,#a88661)
+}
+.contact section{
+    max-width: 1400px;
+    margin: auto;
+    text-align: center;
+    padding: 3% 0px; 
+    color: aliceblue;
+}
+.contact h1{
+    font-stretch:extra-expanded;
+    margin: 2%;
+    font-weight: 600;
+}
+.contact h4{
+    margin: 3%;
+}
+.contact button{
+    font-size: larger;
+    font-weight: 600;
+    box-shadow: none;
+    text-decoration: none;
+    border-color: #417c28;
+    border-width: 2px;
+    border-radius: 50px;
+    padding: 12px 38px ;
+    color:#417c28;
+    border: none;
+    background-color: beige;
+}
+.contact button:hover{
+    box-shadow: 1px 1px 10px 1px yellow ;
+    background-color:yellowgreen;
+    cursor: pointer;
+}
+
+.form{
+    max-width: 1400px ;
+    font-size: 16px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form section{
+    width: 50%;
+    min-width: 390px;
+}
+.form label{
+    width: 100%;
+    /* height: 35px; */
+    /* padding: 7px; */
+    /* outline: none; */
+    /* border-radius: 5px; */
+    margin-top: 1rem;
+
+}
+.form textarea{
+    /* max-width: 100%; */
+    /* min-width: 100%; */
+    /* width: 100%; */
+    /* max-height: 100px; */
+    /* min-height: 100px; */
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+
+}
+.form span{
+    font-size: 50px;
+    margin: 0px 2%;
+}
+.form  input {
+    /* width: 100%; */
+    height: 35px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+}
+.call{
+    display: flex;
+    justify-content:left;
+    flex-wrap: wrap;
+}
+.call section{
+    width: 50%;
+    min-width: 150px;
+    /* border: saddlebrown 2px solid; */
+}
+.call ol{
+    font-size: larger;
+    margin: 5%;
 }

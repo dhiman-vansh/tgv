@@ -97,7 +97,7 @@ export default function Gall() {
 
   return (
     <>
-      <div style={{backgroundColor:"#ffe4c4"}} >
+      <div style={{ backgroundColor: "#ffe4c4" }} >
         {/* <h1 style={{textAlign:"center",marginTop:"2%"}}>Gallery </h1> */}
 
         <div>
@@ -107,17 +107,18 @@ export default function Gall() {
         </div>
 
 
-        <div className="gal" >
+        <div className="gal"
+          data-aos="slide-up"
+          data-aos-duration="2000"
+          data-aos-delay="-1000" >
           {dataImg.map(({ wide, img, title, overlay }, i) => {
             return (
               <>
                 <section
                   style={{ width: { wide } }}>
-                  <img src={img} alt={title} width={wide}
-                    data-aos="slide-up"
-                    data-aos-duration="2000"
-                    data-aos-delay="-1000"
-                  />
+                  <a>
+                    <img src={img} alt={title} width={wide} />
+                  </a>
                   <span className="vis">{title}</span>
                 </section>
               </>
