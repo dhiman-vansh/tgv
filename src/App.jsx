@@ -1,10 +1,11 @@
-import Home from "./Home";
+import Home from "./Comp/Home";
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import Gall from "./Gall";
-import Reservation from "./Reservation";
+import Gall from "./Comp/Gall";
+import Reservation from "./Comp/Reservation";
 import { Routes, Route } from "react-router-dom";
-import About from "./About";
+import About from "./Comp/About";
 import {MDBIcon} from 'mdb-react-ui-kit';
+import Amen from "./Comp/Amen";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/gall" element={<Gall />} />
         <Route path="/res" element={<Reservation />} />
         <Route path="/about" element={<About />} />
+        <Route path="/amen" element={<Amen />} />
 
         {/* <Gall /> */}
         {/* <Reservation /> */}

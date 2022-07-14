@@ -43,6 +43,9 @@
 .nav-link{
     color: white;
 }
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgba%280, 0, 0, 0.55%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e");
+}
 
 .vid{
     background-color: #417c28;
@@ -58,7 +61,7 @@
     flex-wrap: wrap;
 }
 .vid section h2{
-    padding: 2% 0px;
+    padding: 1% 0px;
     width: 50%;
     min-width: 370px;
 }
@@ -75,40 +78,6 @@
 
 
 
-.grev{
-    max-width: 1400px;
-    margin: 2% auto;
-}
-.grev div{
-    display: flex;
-    justify-content: space-evenly;
-}
-.grev card{
-    margin: 2% 0px;
-    text-align: center;
-    padding: 2% 0px;
-    display: block;
-    box-shadow: 1px 1px 8px 1px grey;
-    max-width: 18rem;
-    /* background-color: #417c28; */
-    /* border: brown    2px solid;     */
-}
-.grev section{
-    width: 50%;
-}
-.grev rev{
-    margin: 30px 20px;
-    padding: 5%;
-    box-shadow: 1px 1px 8px 1px grey;
-}
-.grev h1{
-    padding: 2% 0px;
-    font-weight: bolder;
-    font-size: 3rem;
-    color: #417c28;
-    margin: 2% 0px;
-    border-bottom: 2px #417c28 solid  ;
-}
 
 
 .test{
@@ -117,7 +86,7 @@
     /* background-color: blueviolet; */
 }
 .test h2{
-    padding: 2% 0px;
+    padding: 1% 0px;
     font-weight: bolder;
     font-size: 3rem;
     color: #417c28;
@@ -143,14 +112,14 @@
     max-width: 1400px;
     margin: auto;
     border-bottom: 2px #417c28 solid  ;
-    padding: 2% 0px;
+    padding: 1% 0px;
     font-weight: bolder;
     font-size: 3rem;
     color: #417c28;
 }
 .blog{
     max-width: 1400px;
-    padding: 2% 0px;
+    padding: 1% 0px;
     margin: auto;
     display:flex;
     flex-wrap: wrap;
@@ -178,8 +147,23 @@
     /* box-shadow: 1px 1px 10px 1px grey; */
 	transform: scale(5.5);
 }
-
-
+.cot{
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.cot section{
+    padding: 10px;
+    width: 50%;
+    min-width: 350px;
+    /* border: 2px saddlebrown solid; */
+}
+.cot img{
+    /* box-shadow: 2px 1px 10px 0px grey; */
+    border-radius: 20px;
+	transition: .3s ease-in-out;
+}
 
 
 .utube{
@@ -209,7 +193,8 @@
 
 .feat{
     /* background-color: black;  */
-    margin: 2% auto;
+    margin: auto;
+    padding: 1% 0px;
 
 }
 .feat h2{
@@ -217,7 +202,7 @@
     color: #417c28;
     margin: auto;
     border-bottom: 2px #417c28 solid  ;
-    padding: 2% 0px;
+    padding: 1% 0px;
     font-weight: bolder;
     font-size: 3rem;
     /* margin: 2% 0px; */
@@ -243,3 +228,38 @@
 
 
 
+
+ .grev{
+    max-width: 1400px;
+    margin: 2% auto;
+}
+.grev div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.grev card{
+    margin: 2% ;    
+    text-align: center;
+    padding: 1% 0px;
+    display: block;
+    box-shadow: 1px 1px 8px 1px grey;
+    max-width: 18rem;
+    /* background-color: #417c28; */
+    /* border: brown    2px solid;     */
+}
+.grev section{
+    width: 50%;
+}
+.grev rev{
+    margin: 30px 20px;
+    padding: 5%;
+    box-shadow: 1px 1px 8px 1px grey;
+}
+.grev h1{
+    padding: 1% 0px;
+    font-weight: bolder;
+    font-size: 3rem;
+    color: #417c28;
+    margin: 2% auto ;
+    border-bottom: 2px #417c28 solid  ;
+}

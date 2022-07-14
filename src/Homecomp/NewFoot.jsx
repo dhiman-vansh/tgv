@@ -11,7 +11,7 @@ import {
 export default function NewFoot() {
   return (
     <>
-      <div style={{backgroundColor:"#417c28", color:"white", fontWeight:"normal",marginTop:"5%"}}>
+      <div style={{backgroundColor:"#417c28", color:"white", fontWeight:"normal"}}>
     <MDBFooter className='text-center' 
     data-aos="fade-up"
     data-aos-duration="1000"
