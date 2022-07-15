@@ -1,3 +1,5 @@
+import goat from "../Assests/new.JPG"
+
 export default function About() {
   return (
     <>
@@ -20,7 +22,7 @@ export default function About() {
             </div>
             <div class="col-lg-6 pb-30">
               <div class="about-content-image border-radius-10">
-                <img src="https://www.thegoatvillages.com/assets/images/c2.jpg" alt="image" />
+              <img src={goat} width={"100%"} alt="image" />
               </div>
             </div>
           </div>

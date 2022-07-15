@@ -44,23 +44,26 @@ export default class AutoPlay extends Component {
       <div className="feat">
         <h2>Our Mentions</h2>
         <Slider {...settings}>
-          <a href="">
+          <a href="https://www.outlookindia.com/outlooktraveller/explore/story/54200/uttarakhand-goat-village" target={"_blank"}>
              <img src="https://www.thegoatvillage.com/images/new_img/features/1.png" />
           </a>
-          <a href="">
-            <img src="https://www.thegoatvillage.com/images/new_img/features/2.png" />
+          <a href="https://tourismindia.org/the-goat-village-get-into-finalists-wtm-world-rt-award-2019/" target={"_blank"}>
+            <img src="https://www.thegoatvillage.com/images/new_img/features/7.png" />
           </a>
-          <a href="">
-            <img src="https://www.thegoatvillage.com/images/new_img/features/3.png" />
+          <a href="https://www.tribuneindia.com/news/archive/features/over-500-villagers-to-witness-goat-weddings-in-tehri-garhwal-368066"target={"_blank"}>
+            <img src="https://www.thegoatvillage.com/images/new_img/features/8.png" />
           </a>
-          <a href="">
-            <img src="https://www.thegoatvillage.com/images/new_img/features/4.png" />
+          <a href="https://timesofindia.indiatimes.com/city/dehradun/a-rally-for-rural-experience-of-goat-village-at-nag-tibba/articleshow/53478420.cms" target={"_blank"}>
+            <img src="https://www.thegoatvillage.com/images/new_img/features/11.png" />
           </a>
-          <a href="">
-            <img src="https://www.thegoatvillage.com/images/new_img/features/5.png" />
+          <a href="https://yourstory.com/socialstory/2020/01/social-enterprise-green-people-farmers-tourists-sustainable-livelihood/amp" target={"_blank"}>
+            <img src="https://www.thegoatvillage.com/images/new_img/features/15.png" />
           </a>
-          <a href="">
-          <img src="https://www.thegoatvillage.com/images/new_img/features/6.png" />
+          <a href="https://curlytales.com/this-dreamy-eco-resort-in-the-hills-of-uttarakhand-is-vacay-goals/"  target={"_blank"}>
+          <img src="https://www.thegoatvillage.com/images/new_img/features/18.png" />
+          </a>
+          <a href="https://www.thebetterindia.com/92568/the-goat-village-himalayas-retreat-uttarakhand/" target={"_blank"}>
+          <img src="https://www.thegoatvillage.com/images/new_img/features/21.png" />
           </a>
         </Slider>
       </div>

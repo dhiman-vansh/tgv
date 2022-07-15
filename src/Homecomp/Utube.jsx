@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import "./Home.css"
-import pic from "../Assests/goat.jpg"
+// import pic from "../Assests/goat.jpg"
 
 
 
