@@ -29,7 +29,7 @@ export default function NewFoot() {
           <a className='btn btn-outline-light btn-floating m-1' href='https://www.instagram.com/thegoatvillages/' role='button'>
             <MDBIcon fab icon='instagram' />
           </a>
-          <a className='btn btn-outline-light btn-floating m-1' href='https://wa.me/8755381346 ' role='button'>
+          <a className='btn btn-outline-light btn-floating m-1' href='https://wa.me/9068025401' role='button'>
             <MDBIcon fab icon='whatsapp' />
           </a>
         </section>  

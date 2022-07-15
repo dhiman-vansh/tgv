@@ -12,7 +12,7 @@ import Contact from "./Comp/Contact";
 function App() {
   return (
     <>
-      <a href="https://wa.me/8755381346" class="whatsapp_float" target="_blank"><MDBIcon style={{marginTop:"22%"}} fab icon='whatsapp' /> </a>
+      <a href="https://wa.me/9068025401" class="whatsapp_float" target="_blank"><MDBIcon style={{marginTop:"22%"}} fab icon='whatsapp' /> </a>
 
       <Routes>
         <Route path="/" element={<Home />} />
