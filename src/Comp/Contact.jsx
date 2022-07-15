@@ -35,11 +35,12 @@ export default function Contact() {
             <h3 style={{ fontSize: "40px", fontWeight: "600" }}>Give Us a Call On</h3>
             <div className="call">
               <section>
-                <ol>+91-725 380 3803</ol>
-                <ol>+91-725 380 3803</ol>
+                <ol>+91-9068025401</ol>
+                <ol>+91-9068025301</ol>
+                <ol>+91-9411150250</ol>
               </section>
               <section>
-                <MDBIcon style={{ fontSize: "70px" }} icon="mobile" />
+                <MDBIcon style={{ fontSize: "100px" }} icon="mobile" />
               </section>
             </div>
 
