@@ -14,17 +14,13 @@ export default function Reservation() {
   const [mail, setMail] = useState("");
   const [phone, setPhone] = useState(0);
   let [newslots, setNewslots] = useState(0);
-  // const [confirm, setConfirm] = useState("");
-
+  const [adult, setAdult] = useState(0);
+  const [child, setChild] = useState(0);
+  const [bookslot, setBookslot] = useState(0);
 
   const makeAPICall = async () => {
     try {
       const response = await fetch('https://tgvapi.herokuapp.com/dataget'
-        // , {
-        //   mode: 'cors', headers: {
-        //     'Access-Control-Allow-Origin': '*'
-        //   }
-        // }
       );
       const data = await response.json();
       console.log({ data })
@@ -39,17 +35,39 @@ export default function Reservation() {
     makeAPICall();
   }, [])
 
+  useEffect(() => {
+    // console.log(`adult ${adult} and child ${child}`)
+    if (adult < 0) {
+      alert("wrong entry of adults")
+      window.location.reload(`false`)
+    }
+    setNewslots(adult * 2 + child)
+  }, [adult])
+
+  useEffect(() => {
+    setNewslots(adult * 2 + child)
+  }, [child])
+  useEffect(() => {
+    // console.log(`booking slot are ${bookslot}`)
+    console.log(`total nuber are ${newslots}`)
+    if (newslots > 0) {
+      setBookslot(Math.floor((newslots / 5)) +1) 
+    }
+    if(newslots%5 ==0) {
+      setBookslot(newslots/5)
+    }
+  }, [newslots])
+  useEffect(() => {
+    console.log(`booking slot are ${Math.floor(bookslot)}`)
+  }, [bookslot])
+
   const slotAvailability = () => {
     const dateSelected = dateState;
     data.map((value) => {
-      // console.log(moment(value.date).format('MMMM Do YYYY'))
       if (moment(value.date).format('MMMM Do YYYY') == moment(dateSelected).format('MMMM Do YYYY')) {
-        // console.log("slots are ", value.slots)
         setActdate(value.date);
-        // console.log(actdate);
         setSlot(value.slots);
       }
-      // else {setSlot(`(no data available)`)}
     })
   }
 
@@ -59,28 +77,11 @@ export default function Reservation() {
     setSlot(`(click on "check slots")`);
   }
 
-  // const saveUserData = () => {
-  //   { console.log("name is ", name) }
-
-  //     method: 'POST',
-  //     mode: 'cors',
-  //     headers: {
-  //       'Content-Type': 'application/json'
-  //     },
-  //     body: JSON.stringify({"date": new Date(),
-  //     "slots": 12})
-  //   });
-  //   result = result.json();
-  //   console.log('check data', r  esult)
-  // }
-
   const saveData = () => {
-    // { console.log("name is ", name) }
 
     let result = fetch('https://tgvapi.herokuapp.com/postuser'
       , {
         method: 'POST',
-        // mode: 'cors',
         headers: {
           'Content-Type': 'application/json'
         },
@@ -109,12 +110,10 @@ export default function Reservation() {
 
   const upDate = () => {
 
-    // { console.log("name is ", name) }
 
     let result = fetch(`https://tgvapi.herokuapp.com/putuser/${actdate}`
       , {
         method: 'PUT',
-        // mode: 'cors',
         headers: {
           'Content-Type': 'application/json'
         },
@@ -130,27 +129,19 @@ export default function Reservation() {
 
   return (
     <div className='resbgimg' >
-      <h1 style={{ textAlign: "center",color:"white", fontWeight:"600" }}>BOOKINGS</h1>
+      <h1 style={{ textAlign: "center", color: "white", fontWeight: "600" }}>BOOKINGS</h1>
 
       <div className='reserv'>
         <div className='cal'>
           <Calendar
-            // className={"exactcal"}
-            // activeStartDate={new Date()}
-            // value={dateState}
             minDate={new Date()}
-            // value={dateState}
             onChange={changeDate}
           />
-          {/* {console.log(actdate) } */}
           <button className='calbut' onClick={slotAvailability}> Check Slots</button>
 
-          {/* {console.log('dateis', dateState)} */}
 
-          <p style={{color:"white"}}>Slots available for {moment(dateState).format('MMMM Do YYYY')} are <b>{slots}</b></p>
+          <p style={{ color: "white" }}>Slots available for {moment(dateState).format('MMMM Do YYYY')} are <b>{slots}</b></p>
 
-          {/* <button disabled={slots == 0}>Proceed to book</button>
-          {slots == 0 && <p>No slots available for Selected date</p>} */}
 
         </div>
 
@@ -175,17 +166,29 @@ export default function Reservation() {
               onChange={e => setPhone(e.target.value)}
               type="text" placeholder="Enter the Phone Number " />
           </label>
+          <br></br>
+          <label> Slots to be booked: {bookslot}
+            <br></br>
+            <span>Adults :</span>
+            <a onClick={() => setAdult(adult - 1)}>-</a>
+            <span> {adult}</span>
+            <a onClick={() => { setAdult(adult + 1) }}>+</a>
 
-          <label> Slots<br></br>
-            <input
+            <br></br>
+
+            <span>Childs :</span>
+            <a onClick={() => setChild(child - 1)}>-</a>
+            <span> {child}</span>
+            <a onClick={() => setChild(child + 1)}>+</a>
+            {/* <input
               onChange={(e) => {
                 // setConfirm(e.target.value)
                 // console.log(`number of slots selected is ${e.target.value}`)
                 setNewslots(slots - (e.target.value))
               }}
-              type="text" placeholder="Check Slots then enter " />
+              type="text" placeholder="Check Slots then enter " /> */}
           </label>
-          {console.log(`new slot is ${newslots}`)}
+          {/* {console.log(`new slot is ${newslots}`)} */}
           <br></br>
           <button onClick={() => {
             if (name != "" && phone != 0 && mail != "" && newslots != null) {
@@ -198,13 +201,7 @@ export default function Reservation() {
             else {
               alert("Please enter all entries correctly bro")
             }
-            //  if (newslots < 0) {
-            //   alert("Slots entered are more than available ");
-            // } else {
-            //   saveData()
-            // }
           }}>SUBMIT</button>
-          {/* </form> */}
 
         </div>
       </div>

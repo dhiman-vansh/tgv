@@ -125,15 +125,17 @@
     max-width: 1400px;
     padding: 1% 0px;
     margin: auto;
-    display:flex;
+}
+.blog div{
+    display: flex;
     flex-wrap: wrap;
 }
 .blog section{
     width: 50%;
     padding: 10px;
     /* border: 2px saddlebrown solid; */
-    min-width: 390px;
-    align-items: center;
+    min-width: 380px;
+    /* align-items: center; */
 }
 .blog figure{
 	margin: 0;
@@ -149,7 +151,7 @@
 .blog img:hover{
     cursor: pointer;
     /* box-shadow: 1px 1px 10px 1px grey; */
-	transform: scale(5.5);
+	transform: scale(1.2);
 }
 .cot{
     max-width: 1400px;

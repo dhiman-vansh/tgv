@@ -134,6 +134,20 @@ label{
     border-radius: 5%;
 
 }
+.user span{
+    padding: 0px 20px;
+}
+.user a{
+    padding: 0px 10px;
+    background-color: yellowgreen;
+    color: black;
+    border: #373b3c solid 2px;
+}
+.user a:hover{
+    cursor: pointer;
+    box-shadow: 0px 7px 10px 0px green;
+
+}
 
 .about{
     background-image: url(./Assests/Gall/sunset.jpg);
